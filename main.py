@@ -43,34 +43,34 @@ def fetch_table(table_name: str) -> List[Dict]:
 def root():
     return {"message": "E-commerce API is running"}
 
-@app.get("/customers")
+@app.get("/Users")
 def get_customers():
-    return fetch_table("customers")
+    return fetch_table("Users")
 
-@app.get("/products")
+@app.get("/Products")
 def get_products():
-    return fetch_table("products")
+    return fetch_table("Products")
 
-@app.get("/orders")
+@app.get("/Orders")
 def get_orders():
-    return fetch_table("orders")
+    return fetch_table("Orders")
 
-@app.get("/order_items")
+@app.get("/Order_items")
 def get_order_items():
-    return fetch_table("order_items")
+    return fetch_table("Order_items")
 
-@app.get("/categories")
+@app.get("/Categories")
 def get_categories():
-    return fetch_table("categories")
+    return fetch_table("Categories")
 
-@app.get("/payments")
+@app.get("/Payments")
 def get_payments():
-    return fetch_table("payments")
+    return fetch_table("Payments")
 
-@app.get("/shipments")
+@app.get("/Shipments")
 def get_shipments():
-    return fetch_table("shipments")
+    return fetch_table("Shipments")
 
-@app.get("/reviews")
+@app.get("/Reviews")
 def get_reviews():
-    return fetch_table("reviews")
+    return fetch_table("Reviews")
