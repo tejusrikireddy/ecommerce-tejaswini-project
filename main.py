@@ -55,9 +55,9 @@ def get_products():
 def get_orders():
     return fetch_table("Orders")
 
-@app.get("/Order_items")
+@app.get("/Order_Items")
 def get_order_items():
-    return fetch_table("Order_items")
+    return fetch_table("Order_Items")
 
 @app.get("/Categories")
 def get_categories():
